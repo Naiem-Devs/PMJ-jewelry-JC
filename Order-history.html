@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order History</title>
+
+  <link rel="stylesheet" href="assets/css/font-family.css" />
+  <link rel="stylesheet" href="assets/css/style-4.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/slick.css" />
+  <link rel="stylesheet" href="assets/css/custom-font2/stylesheet.css" />
+  <link rel="stylesheet" href="assets/fonts/stylesheet.css" />
+  <link rel="stylesheet" href="assets/css/default.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+  <!-- ===================== OFFCANVAS AREA START ===================== -->
+  <div class="offcanvas-area">
+    <div class="offcanvas_header">
+      <a href="#" class="users currency">
+        <img src="assets/img/world.svg" alt="" class="world" />
+        <div class="f-group"><img src="assets/img/curr-1.svg" alt="">
+          <select class="f-control f-dropdown" placeholder="Please choose 2">
+            <option value=""> </option>
+            <option value="1" selected="selected" data-image="assets/img/curr-1.svg">inr</option>
+            <option value="2" data-image="assets/img/curr-2.svg">USD</option>
+            <option value="3" data-image="assets/img/curr-3.svg">EUR</option>
+            <option value="4" data-image="assets/img/curr-2.svg">CAN</option>
+            <option value="5" data-image="assets/img/curr-2.svg">SGP</option>
+          </select>
+        </div>
+      </a>
+      <a href="#" class="logo">
+        <img src="assets/img/logo-mobile.svg" alt="">
+      </a>
+      <div class="menu-close">
+        <span>Close</span>
+      </div>
+    </div>
+    <div class="offcanvas-menu">
+      <div class="main-menu">
+        <ul class="d-block">
+          <li><a href="#" class="Rings_btn"><img src="assets/img/mNav-1.png" alt=""> Rings <img src="assets/img/arrow_right.svg" class="arrow_right" alt=""></a></li>
+          <li><a href="#"><img src="assets/img/mNav-2.png" alt=""> Earrings <img src="assets/img/arrow_right.svg" class="arrow_right" alt=""></a></li>
+          <li><a href="#" class="Shop_btn"><img src="assets/img/mNav-3.png" alt=""> Shop All <img src="assets/img/arrow_right.svg" class="arrow_right" alt=""></a></li>
+          <li><a href="#" class="Gifts_btn"><img src="assets/img/mNav-4.png" alt=""> Gifts <img src="assets/img/arrow_right.svg" class="arrow_right" alt=""></a></li>
+          <li><a href="#"><img src="assets/img/mNav-5.png" alt=""> About Us <img src="assets/img/arrow_right.svg" class="arrow_right" alt=""></a></li>
+          <li><a href="#"><img src="assets/img/mNav-6.png" alt=""> Solitaire Stories <img src="assets/img/arrow_right.svg" class="arrow_right" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="offcanvas__contact">
+        <ul>
+          <li>
+            <a href="#"><img src="assets/img/header-icon-1.svg" alt=""> Wishlist</a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/img/header-icon-2.svg" alt=""> account</a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/img/header-icon-3.svg" alt=""> Book an appointment</a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/img/header-icon-4.svg" alt=""> Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="Installments_blk">
+        <i>
+          <img src="assets/img/ins-t.png" alt="">
+        </i>
+        <div class="">
+          <h5>Own any PMJ Jewellery in just 6 or 12 Installments.</h5>
+          <p>Know more about <br> <a href="#">Swarnabhishekam scheme</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas_btm">
+      <a href="#"><img src="assets/img/pin.png" alt="">Find our Store</a>
+      <span></span>
+      <a href="#">
+        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.19633 9.38949C1.19584 10.9563 1.60836 12.4858 2.39262 13.834L1.12109 18.4405L5.87218 17.2044C7.18126 17.9126 8.65515 18.286 10.1549 18.2866H10.1588C15.0981 18.2866 19.119 14.2981 19.1211 9.3966C19.1219 7.02116 18.1904 4.78742 16.4984 3.10707C14.8062 1.42693 12.5562 0.500977 10.1588 0.5C5.21862 0.5 1.1983 4.48791 1.19633 9.38949ZM4.0257 13.6018L3.8483 13.3223C3.10257 12.1458 2.70896 10.7862 2.70952 9.39005C2.71114 5.31598 6.05267 2.0014 10.1616 2.0014C12.1514 2.00223 14.0215 2.77191 15.428 4.16837C16.8345 5.56498 17.6084 7.42149 17.6079 9.39605C17.6061 13.4701 14.2645 16.7851 10.1588 16.7851H10.1558C8.81898 16.7844 7.50786 16.4282 6.36444 15.755L6.09233 15.5949L3.27294 16.3283L4.0257 13.6017V13.6018Z" fill="#3C63AE" stroke="#F9F8F6" stroke-width="0.3"/>
+          <path d="M7.95752 6.23487C7.81262 5.91683 7.66014 5.91041 7.52235 5.90483C7.40952 5.90004 7.28053 5.9004 7.15167 5.9004C7.02268 5.9004 6.81311 5.94832 6.63597 6.13933C6.45865 6.33052 5.95898 6.79256 5.95898 7.73228C5.95898 8.67206 6.65206 9.58023 6.74868 9.7078C6.84542 9.83512 8.08668 11.8253 10.0525 12.5909C11.6864 13.2271 12.0188 13.1006 12.3734 13.0687C12.7281 13.0369 13.5178 12.6068 13.6789 12.1608C13.8401 11.7148 13.8401 11.3325 13.7918 11.2526C13.7434 11.1731 13.6144 11.1253 13.421 11.0298C13.2275 10.9342 12.2767 10.4722 12.0994 10.4084C11.9221 10.3447 11.7932 10.3129 11.6642 10.5042C11.5352 10.6951 11.1648 11.1253 11.0519 11.2526C10.9392 11.3803 10.8263 11.3962 10.6329 11.3007C10.4394 11.2048 9.8165 11.0034 9.07751 10.3527C8.50255 9.84645 8.11438 9.22123 8.00155 9.02998C7.88871 8.83902 7.98946 8.73551 8.08644 8.64033C8.17334 8.55475 8.27992 8.41729 8.37672 8.3058C8.47315 8.19425 8.50534 8.11467 8.56983 7.98728C8.63438 7.85978 8.60208 7.74823 8.5538 7.65269C8.50534 7.55716 8.1295 6.61252 7.95752 6.23487Z" fill="#3C63AE"/>
+        </svg>
+        Whatsapp us
+      </a>
+    </div>
+  </div>
+
+  <div class="offcanvas-overlay"></div>
+  <!-- ===================== OFFCANVAS AREA END ===================== -->
+  <div class="ringMenu megaMenu">
+    <img src="assets/img/header_bg.png" alt="">
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="ringStyle_blk">
+            <h3>By Style</h3>
+            <ul>
+              <li>
+                <a href="#">
+                  <i>
+                    <img src="assets/img/rings-1.png" alt="">
+                  </i>
+                  <span>Couple rings</span>
+                </a>
+              </li>
+
+
+              <li>
+                <a href="#">
+                  <i>
+                    <img src="assets/img/rings-4.png" alt="">
+                  </i>
+                  <span>Cocktail</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i>
+                    <img src="assets/img/rings-3.png" alt="">
+                  </i>
+                  <span>Engagement</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i>
+                    <img src="assets/img/rings-1.png" alt="">
+                  </i>
+                  <span>Casual</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i>
+                    <img src="assets/img/rings-1.png" alt="">
+                  </i>
+                  <span>Casual</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i>
+                    <img src="assets/img/rings-2.png" alt="">
+                  </i>
+                  <span>Casual</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i>
+                    <img src="assets/img/rings-2.png" alt="">
+                  </i>
+                  <span>Casual</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="ringStyle_blk">
+            <h3>By Metal/Stone</h3>
+            <ul class="flex-column">
+              <li>
+                <a href="#">
+                  <i>
+                    <img src="assets/img/ston-1.png" alt="">
+                  </i>
+                  <span>Gold</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i>
+                    <img src="assets/img/ston-2.png" alt="">
+                  </i>
+                  <span>Diamond</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i>
+                    <img src="assets/img/ston-3.png" alt="">
+                  </i>
+                  <span>Silver</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i>
+                    <img src="assets/img/ston-4.png" alt="">
+                  </i>
+                  <span>Gemstone</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="ringStyle_blk">
+            <h3>By Price</h3>
+            <ul class="flex-column">
+              <li>
+                <a href="#">
+                  <span>Under 20k</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>20k to 40k</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>40k to 50k</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Above 50k</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="rings_img_blk">
+                <i>
+                  <img src="assets/img/rings-img-1.png" alt="">
+                </i>
+                <a href="#">Wedding Rings</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="rings_img_blk">
+                <i>
+                  <img src="assets/img/rings-img-2.png" alt="">
+                </i>
+                <a href="#">Traditional Rings</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="shopMenu megaMenu">
+    <img src="assets/img/header_bg.png" alt="">
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="ringStyle_blk">
+                <h3>Neckwear</h3>
+                <ul class="flex-column">
+                  <li>
+                    <a href="#">
+                      <i>
+                        <img src="assets/img/rings-1.png" alt="">
+                      </i>
+                      <span>Necklaces</span>
+                    </a>
+                  </li>
+
+
+                  <li>
+                    <a href="#">
+                      <i>
+                        <img src="assets/img/rings-2.png" alt="">
+                      </i>
+                      <span>Choker</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i>
+                        <img src="assets/img/rings-3.png" alt="">
+                      </i>
+                      <span>Haram</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i>
+                        <img src="assets/img/rings-1.png" alt="">
+                      </i>
+                      <span>Mala</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i>
+                        <img src="assets/img/rings-1.png" alt="">
+                      </i>
+                      <span>Chain</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i>
+                        <img src="assets/img/rings-2.png" alt="">
+                      </i>
+                      <span>Mangalsutra</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i>
+                        <img src="assets/img/rings-2.png" alt="">
+                      </i>
+                      <span>Pendants</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="ringStyle_blk">
+                <h3>Neckwear</h3>
+                <ul class="flex-column">
+                  <li>
+                    <a href="#">
+                      <i>
+                        <img src="assets/img/rings-1.png" alt="">
+                      </i>
+                      <span>Necklaces</span>
+                    </a>
+                  </li>
+
+
+                  <li>
+                    <a href="#">
+                      <i>
+                        <img src="assets/img/rings-2.png" alt="">
+                      </i>
+                      <span>Choker</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i>
+                        <img src="assets/img/rings-3.png" alt="">
+                      </i>
+                      <span>Haram</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i>
+                        <img src="assets/img/rings-1.png" alt="">
+                      </i>
+                      <span>Mala</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i>
+                        <img src="assets/img/rings-1.png" alt="">
+                      </i>
+                      <span>Chain</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="ringStyle_blk">
+                <h3>Neckwear</h3>
+                <ul class="flex-column">
+                  <li>
+                    <a href="#">
+                      <i>
+                        <img src="assets/img/rings-1.png" alt="">
+                      </i>
+                      <span>Necklaces</span>
+                    </a>
+                  </li>
+
+
+                  <li>
+                    <a href="#">
+                      <i>
+                        <img src="assets/img/rings-2.png" alt="">
+                      </i>
+                      <span>Choker</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i>
+                        <img src="assets/img/rings-3.png" alt="">
+                      </i>
+                      <span>Haram</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i>
+                        <img src="assets/img/rings-1.png" alt="">
+                      </i>
+                      <span>Mala</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="rings_img_blk">
+                <i>
+                  <img src="assets/img/rings-img-2.png" alt="">
+                </i>
+                <a href="#">Popular Accessories</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="rings_img_blk">
+                <i>
+                  <img src="assets/img/rings-img-1.png" alt="">
+                </i>
+                <a href="#">Shop all accessories</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="GiftsMenu megaMenu">
+    <img src="assets/img/header_bg.png" alt="">
+    <ul>
+      <li>
+        <a href="#" class="gift_blk">
+          <img src="assets/img/gift-1.png" alt="">
+          <span>Gold Coins</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="gift_blk">
+          <img src="assets/img/gift-2.png" alt="">
+          <span>Cuff links</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="gift_blk">
+          <img src="assets/img/gift-3.png" alt="">
+          <span>Pens</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="gift_blk">
+          <img src="assets/img/gift-4.png" alt="">
+          <span>Watches</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="pinCode megaMenu">
+    <div class="pinCode_top">
+      <h5>Enter Pincode</h5>
+      <p>Get fastest delivery dates possible, check for appointment and find nearby stores quickly!</p>
+      <div class="pinCode_input">
+        <input type="text" placeholder="Enter pincode">
+        <a href="#">enter</a>
+      </div>
+      <a href="#" class="location_link">Use your current location</a>
+    </div>
+    <hr>
+    <div class="pinCode_wrp">
+      <div class="pinCode_blk">
+        <i>
+          <img src="assets/img/pinCode-1.png" alt="">
+        </i>
+        <h6>pmj stores</h6>
+        <a href="#">See all stores</a>
+      </div>
+      <div class="pinCode_blk">
+        <i>
+          <img src="assets/img/pinCode-2.png" alt="">
+        </i>
+        <h6>appointment</h6>
+        <a href="#">Book Now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="srcMenu megaMenu">
+    <div class="srcMenu_input">
+      <a href="#" class="search_icon">
+        <img src="assets/img/src-icon.svg" alt="">
+      </a>
+      <input type="text" placeholder="Search for a Masterpiece...">
+      <a href="#" class="src_btn">
+        <span class="src">search</span>
+        <span class="clear">clear</span>
+      </a>
+    </div>
+    <div class="srcMenu_content">
+      <div class="srcMenu_list">
+        <h6>trending searches</h6>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="assets/img/search.svg" alt="">
+              <span>Rings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/img/search.svg" alt="">
+              <span>Earrings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/img/search.svg" alt="">
+              <span>Band rings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/img/search.svg" alt="">
+              <span>Gold Necklace</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/img/search.svg" alt="">
+              <span>Solitaires</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/img/search.svg" alt="">
+              <span>Pendants</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="srcMenu_slider_content">
+        <div class="srcMenu_slider_top">
+          <h6>Popular products</h6>
+          <div class="view_all_text">
+            <a href="#">view all<img src="assets/img/L_arrow_right.svg"></a>
+          </div>
+        </div>
+        <div class="srcMenu_slider owl-carousel">
+          <a href="#" class="srcMenu_item">
+            <i>
+              <img src="assets/img/pp-2.png" alt="">
+            </i>
+            <span>Solitaire Diamo</span>
+          </a>
+          <a href="#" class="srcMenu_item">
+            <i>
+              <img src="assets/img/pp-1.png" alt="">
+            </i>
+            <span>Urbane Ring</span>
+          </a>
+          <a href="#" class="srcMenu_item">
+            <i>
+              <img src="assets/img/pp-3.png" alt="">
+            </i>
+            <span>Urbane Ring</span>
+          </a>
+          <a href="#" class="srcMenu_item">
+            <i>
+              <img src="assets/img/pp-4.png" alt="">
+            </i>
+            <span>Urbane Ring</span>
+          </a>
+          <a href="#" class="srcMenu_item">
+            <i>
+              <img src="assets/img/pp-3.png" alt="">
+            </i>
+            <span>Urbane Ring</span>
+          </a>
+          <a href="#" class="srcMenu_item">
+            <i>
+              <img src="assets/img/pp-4.png" alt="">
+            </i>
+            <span>Urbane Ring</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="contact__details__popup">
+            <div class="close__popup__btn">
+              <span class="close__popup" data-bs-dismiss="modal"><img src="assets/img/close__popup.svg" alt=""></span>
+            </div>
+            <div class="login__popup__title">
+              <h4>Login</h4>
+              <p>Login to view your recent purchases or wishlist and manage your personal details here.</p>
+            </div>
+
+            <div class="login__form">
+              <form action="#">
+                <div class="row g-md-5 g-4">
+                  <div class="col-md-12">
+                    <div class="single__checkout__form p-0">
+                      <fieldset class="textfield textfield--light">
+                        <input id="some-id" class="textfield__input" required="">
+                        <label for="some-id" class="textfield__label textfield__label--required">Enter email or
+                          phone</label>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="single__checkout__form p-0">
+                      <fieldset class="textfield textfield--light">
+                        <input id="some-id" class="textfield__input" required="">
+                        <label for="some-id" class="textfield__label textfield__label--required">OTP - *******</label>
+                      </fieldset>
+                      <button class="change_pass" type="button" style="text-decoration: none;">resend in 00:12</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="similar__popup__btn mt-4">
+                  <a href="#" class="active">Login</a>
+                </div>
+                <div class="create__new__pass">
+                  <p>New to PMJ Jewels ? <a href="#">Create new account</a></p>
+                </div>
+
+                <div class="login__social__ico__blk">
+                  <span>OR</span>
+                  <div class="login__social__ico">
+                    <a href="#"><img src="assets/img/google_ico.svg" alt=""></a>
+                    <a href="#"><img src="assets/img/facebook_ico.svg" alt=""></a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ===================== HEADER AREA START ===================== -->
+  <header id="header__area" class="header__area">
+    <div class="container">
+      <div class="header__wrap">
+        <div class="header__nav">
+          <ul>
+            <li><a href="#" class="Rings_btn">Rings</a></li>
+            <li><a href="#">Earrings</a></li>
+            <li><a href="#" class="Shop_btn">Shop All</a></li>
+            <li><a href="#" class="Gifts_btn">Gifts</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">solitaire Stories</a></li>
+          </ul>
+          <div class="header__bar">
+            <a href="#"><img src="assets/img/bar.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="header__logo">
+          <a href="#"><img src="assets/img/logo_white.svg" alt="" /></a>
+        </div>
+        <div class="header__user__bar">
+          <div class="header__search__user">
+            <a href="#" class="search_btn"><img src="assets/img/search.svg" alt="" class="search" />Search</a>
+            <a href="javascript:void(0)" class="users currency">
+              <img src="assets/img/world.svg" alt="" class="world" />
+              <div class="f-group"><img src="assets/img/curr-1.svg" alt="">
+                <select class="f-control f-dropdown" placeholder="Please choose 2">
+                  <option value=""> </option>
+                  <option value="1" selected="selected" data-image="assets/img/curr-1.svg">inr</option>
+                  <option value="2" data-image="assets/img/curr-2.svg">USD</option>
+                  <option value="3" data-image="assets/img/curr-3.svg">EUR</option>
+                  <option value="4" data-image="assets/img/curr-2.svg">CAN</option>
+                  <option value="5" data-image="assets/img/curr-2.svg">SGP</option>
+                </select>
+              </div>
+            </a>
+
+            <a href="#" class="pin_btn"><img src="assets/img/pin.png" alt="" class="" /></a>
+            <a href="#" class="users"><img src="assets/img/love.svg" alt="" class="love" /></a>
+            <a href="#" class="users" data-bs-toggle="modal" data-bs-target="#loginModal"><img
+                src="assets/img/user.svg" alt="" class="user" /></a>
+            <a href="#"><img src="assets/img/shop.svg" alt="" class="shop" /></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ===================== HEADER AREA END ===================== -->
+
+  <!-- ===================== MAIN AREA START ===================== -->
+  <main class="overflow-hidden">
+
+    <!-- ===================== SHIPPING AREA START ===================== -->
+    <section class="store__locator__area">
+      <div class="container" style="max-width: 1180px;">
+        <div class="row g-3">
+          <div class="col-xl-4">
+            <div class="account__left__wrapper">
+              <div class="account__left__content">
+                <h4>my account</h4>
+                <p>Welcome, <span>Saniya Shaikh.</span></p>
+              </div>
+              <ul>
+                <li><a href="#">account details <span><img src="assets/img/arrow_right.svg" alt=""></span></a></li>
+                <li class="active"><a href="#">order history <span><img src="assets/img/arrow_right.svg" alt=""></span></a></li>
+                <li><a href="#">ADDRESSES <span><img src="assets/img/arrow_right.svg" alt=""></span></a></li>
+                <li><a href="#">saved cards <span><img src="assets/img/arrow_right.svg" alt=""></span></a></li>
+                <li><a href="#">support <span><img src="assets/img/arrow_right.svg" alt=""></span></a></li>
+              </ul>
+              <div class="logout__btn">
+                <a href="#">Logout</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8">
+            <div class="order__history">
+              <div class="details__title__wrap store_search_wrap">
+                <div class="details__title none_phone">
+                  <h4>Order history <small>(5 Products delivered)</small></h4>
+                </div>
+                <div class="oder__history__search">
+                  <a href="#"><img src="assets/img/search.svg" alt=""> Search</a>
+                </div>
+                <div class="filter__btn none_desk">
+                  <p><span><img src="assets/img/filter_ico.svg" alt=""></span> Filter</p>
+                </div>
+              </div>
+
+              <div class="single__product__hishtory">
+                <div class="product__history__top__blk">
+                  <h5><span><img src="assets/img/track.svg" alt=""></span> Track your order</h5>
+                  <p>Estimated Delivery 24 March</p>
+                </div>
+                <div class="shipping__single__blk">
+                  <div class="shipping__ring__thumb">
+                    <img src="assets/img/hishtory_ring.png" alt="">
+                  </div>
+                  <div class="shipping__content">
+                    <div class="shipping__size">
+                      <p><small>order number:</small> <span>00000029265</span></p>
+                      <p><small>order date:</small> <span>01/03/2023</span></p>
+                      <p><small>no of item:</small> <span>1</span></p>
+                      <p><small>total amount:</small> <span>₹ 2,45,999</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__review__blk">
+                  <div class="product__star__blk">
+                    <h5>rate the product:</h5>
+                    <div class="product__star">
+                      <span><img src="assets/img/full_star.svg" alt=""></span>
+                      <span><img src="assets/img/full_star.svg" alt=""></span>
+                      <span><img src="assets/img/full_star.svg" alt=""></span>
+                      <span><img src="assets/img/border_star.svg" alt=""></span>
+                      <span><img src="assets/img/border_star.svg" alt=""></span>
+                    </div>
+                  </div>
+                  <div class="more__details__btn">
+                    <a href="#">More details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single__product__hishtory">
+                <div class="product__history__top__blk">
+                  <h5><span><img src="assets/img/confirm.svg" alt=""></span> Delivered</h5>
+                  <p>Estimated Delivery 24 March</p>
+                </div>
+                <div class="shipping__single__blk">
+                  <div class="shipping__ring__thumb">
+                    <img src="assets/img/hishtory_ring.png" alt="">
+                  </div>
+                  <div class="shipping__content">
+                    <div class="shipping__size">
+                      <p><small>order number:</small> <span>00000029265</span></p>
+                      <p><small>order date:</small> <span>01/03/2023</span></p>
+                      <p><small>no of item:</small> <span>1</span></p>
+                      <p><small>total amount:</small> <span>₹ 2,45,999</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__review__blk">
+                  <div class="product__star__blk">
+                    <h5>rate the product:</h5>
+                    <div class="product__star">
+                      <span><img src="assets/img/full_star.svg" alt=""></span>
+                      <span><img src="assets/img/full_star.svg" alt=""></span>
+                      <span><img src="assets/img/full_star.svg" alt=""></span>
+                      <span><img src="assets/img/border_star.svg" alt=""></span>
+                      <span><img src="assets/img/border_star.svg" alt=""></span>
+                    </div>
+                  </div>
+                  <div class="more__details__btn">
+                    <a href="#">More details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single__product__hishtory">
+                <div class="product__history__top__blk">
+                  <h5><span><img src="assets/img/cancel.svg" alt=""></span> Cancelled</h5>
+                  <p>Estimated Delivery 24 March</p>
+                </div>
+                <div class="shipping__single__blk">
+                  <div class="shipping__ring__thumb">
+                    <img src="assets/img/hishtory_ring.png" alt="">
+                  </div>
+                  <div class="shipping__content">
+                    <div class="shipping__size">
+                      <p><small>order number:</small> <span>00000029265</span></p>
+                      <p><small>order date:</small> <span>01/03/2023</span></p>
+                      <p><small>no of item:</small> <span>1</span></p>
+                      <p><small>total amount:</small> <span>₹ 2,45,999</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__review__blk">
+                  <div class="product__star__blk">
+                    <h5>rate the product:</h5>
+                    <div class="product__star">
+                      <span><img src="assets/img/full_star.svg" alt=""></span>
+                      <span><img src="assets/img/full_star.svg" alt=""></span>
+                      <span><img src="assets/img/full_star.svg" alt=""></span>
+                      <span><img src="assets/img/border_star.svg" alt=""></span>
+                      <span><img src="assets/img/border_star.svg" alt=""></span>
+                    </div>
+                  </div>
+                  <div class="more__details__btn">
+                    <a href="#">More details</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="next__prev__wrapper">
+                <div class="next__prev__btn">
+                  <a href="#"><span><img src="assets/img/arrow_l.svg" alt=""></span> previous</a>
+                  <a href="#" class="active">next<span><img style="transform: rotate(180deg);" src="assets/img/arrow_l.svg" alt=""></span></a>
+                </div>
+                <div class="page__number">
+                  <p><span>01</span>/05</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== SHIPPING AREA END ===================== -->
+
+  </main>
+  <!-- ===================== MAIN AREA END ===================== -->
+
+  <!-- ===================== FOOTER AREA START ===================== -->
+  <section id="footer__area" class="footer__area white__footer">
+    <div class="container footer__container">
+      <div class="footer__wrap">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+            <div class="footer__part1">
+              <h6>Get Exclusive Offers and News</h6>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry ?</p>
+              <div class="input__signup">
+                <input type="text" placeholder="Your email">
+                <button type="submit">Sign up</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+            <div class="scnd__wrap">
+
+              <div class="jewelry__guide">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item accordion-item1">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button accordion-button1 accordion-button1 collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                        aria-controls="flush-collapseOne">
+                        Jewelry Guide
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="footer__part">
+                        <ul>
+                          <li><a href="#">Lorem Ipsum</a></li>
+                          <li><a href="#">Lorem Ipsum</a></li>
+                          <li><a href="#">FAQs</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item accordion-item1">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button accordion-button1 collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                        aria-controls="flush-collapseTwo">
+                        Customer Service
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="footer__part">
+                        <ul>
+                          <li><a href="#">Returns & Exchange</a></li>
+                          <li><a href="#">Privacy Policy</a></li>
+                          <li><a href="#">Terms & Conditions</a></li>
+                          <li><a href="#">Warranty Policy</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item accordion-item1">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button accordion-button1 collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                        aria-controls="flush-collapseThree">
+                        Company
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="footer__part company">
+                        <ul>
+                          <li><a href="#">About us</a></li>
+                          <li><a href="#">Franchise</a></li>
+                          <li><a href="#">Find Our Store</a></li>
+                          <li><a href="#">Contact Us</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item accordion-item1">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                      <button class="accordion-button accordion-button1 collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                        aria-controls="flush-collapseFour">
+                        Customer support
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                      <div class="footer__part">
+                        <ul>
+                          <li><a href="tel:918008886888">+91 80088 86888, +91 98765 43210</a></li>
+                          <li><a href="#">Chat with Expert</a></li>
+                          <li><a href="mailto:onlinehelp@pmjjewels.com">onlinehelp@pmjjewels.com</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="footer__scnd__wrap">
+                <div class="row">
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="footer__part">
+                      <h6>Jewelry Guide</h6>
+                      <ul>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">FAQs</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="footer__part">
+                      <h6>Customer Service</h6>
+                      <ul>
+                        <li><a href="#">Returns & Exchange</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Warranty Policy</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="footer__part company">
+                      <h6>Company</h6>
+                      <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Franchise</a></li>
+                        <li><a href="#">Find Our Store</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                    <div class="footer__part">
+                      <h6>Customer support</h6>
+                      <ul>
+                        <li><a href="tel:918008886888">+91 80088 86888, +91 98765 43210</a></li>
+                        <li><a href="#">Chat with Expert</a></li>
+                        <li><a href="mailto:onlinehelp@pmjjewels.com">onlinehelp@pmjjewels.com</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <span>© PMJ 2023. All rights reserverd</span>
+          <div class="footer__social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===================== FOOTER AREA END ===================== -->
+
+
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dropDown-currency.js"></script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myFile").name;
+      document.getElementById("demo").innerHTML = x;
+    }
+  </script>
+
+</body>
+
+</html>
